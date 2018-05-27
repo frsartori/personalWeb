@@ -98,19 +98,69 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   @font-face {
+       font-family: 'Roboto';
+       src: url('C:/Users/N2/personalWeb/fontweb/Roboto-Regular.ttf');
+   }
+
+   @font-face {
+    font-family: 'Roboto';
+    src: url('C:/Users/N2/personalWeb/fontweb/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('C:/Users/N2/personalWeb/fontweb/Roboto-BoldItalic.ttf');
+    font-weight: bold italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('C:/Users/N2/personalWeb/fontweb/Roboto-Light.ttf');
+    font-weight: lighter;
+}
+
+    body {
+            font-family: 'Roboto', sans-serif;
+            background-color:rgb(0, 44, 61)
+    }
 
     #container {
-                display:block;
-                width: 1000px;
-                margin-left:auto;
-                margin-right:auto;
+            padding: 0px;
+            display:block;
+            height: 800px;
+            width: 1000px;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: #FFF
 
 }
 
 
+    #menu {
+            text-align: right;
+            font-family: 'Roboto';
+            font-weight: lighter;
+            color: #FFF;
+            width: relative;
+            height: 50px;
+            background-color: rgb(14, 14, 14);
+            padding-top: 1px;
 
+    }
 
+    #navList {
+            list-style: none;
+            margin-right: 20px;
+    }
 
+    #navList li {
+            text-align: right;
+            display: inline;
+            padding-left: 5px;
+            margin-right: 25px;
+}
 
 
 
