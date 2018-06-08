@@ -98,100 +98,95 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   @font-face {
-       font-family: 'Roboto';
-       src: url('C:/Users/UNITEC/personalWeb/fontweb/Roboto-Regular.ttf');
-   }
-
-   @font-face {
-    font-family: 'Roboto';
-    src: url('C:/Users/UNITEC/personalWeb/fontweb/Roboto-Bold.ttf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('C:/Users/UNITEC/personalWeb/fontweb/Roboto-BoldItalic.ttf');
-    font-weight: bold italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('C:/Users/UNITEC/personalWeb/fontweb/Roboto-Light.ttf');
-    font-weight: lighter;
-}
-
     body {
-            font-family: 'Roboto', sans-serif;
-            background-color: white;
+            font-family: 'Unna', sans-serif;
+            background-color: #ececec;
+            color: #969696;
     }
 
     #container {
-            padding: 0px;
-            display:block;
-            height: 400px;
-            width: 1000px;
-            margin-left:auto;
-            margin-right:auto;
-            background: linear-gradient(rgb(239, 239, 239), #FFF);            
-            margin-top: 75px;
-            border-radius: 17px;
-            border-style: solid;
-            border-color: rgb(36, 104, 121);
-            border-width: 1px;
+        margin: auto;
+        width: 1000px;
+    }
 
+    h1 {
+        font-size: 5rem;
+    }
+
+    .firstAnimation {
+        margin-bottom: 0;
+    }
+
+    .secondAnimation {
+        margin: 0 auto;
+    }
+
+
+/* ==========================================================================
+   Author's custom animation styles
+   ========================================================================== */    
+
+   .firstAnimation{
+    -webkit-animation-name: opacityAnimation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: opacityAnimation;
+    animation-duration: 4s;
+    }
+   
+   .secondAnimation{
+       -webkit-animation-name: opacityAnimation; /* Safari 4.0 - 8.0 */
+       -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+       animation-name: opacityAnimation;
+       animation-duration: 4s;
+       animation-delay: 1s;
+       animation-fill-mode: backwards;
+    }
+
+@-webkit-keyframes opacityAnimation {
+    from {opacity:0;}
+    to {opacity:1;}
 }
 
-    #container img {
-        position: absolute;
-        left: 30px;
-        top: 75px;
-        width: inherit;
-        height: inherit;
-        z-index: 1;
-        opacity: 0.2;
-    }
-
-
-    #menu {
-        text-align: center;
-        font-family: 'Roboto';
-        font-weight: bold;
-        color: #FFF;
-        height: 72px;
-        background: linear-gradient(rgb(36, 102, 121), rgb(36, 122, 121));
-        padding-top: 1px;
-        border-radius: 12px 12px 0px 0px;
-        font-size: 40px;
-        line-height: 72px;
-        margin-top: -22px;
-        border-style: solid;
-        border-width: 0px 0px 1px 0px;
-        border-color: #172829;
-    }
-
-    
-
-    /* #navList {
-            list-style: none;
-            margin-right: 20px;
-            
-    }
-
-    #navList li {
-            text-align: right;
-            display: inline;
-            padding-left: 5px;
-            margin-right: 25px;
+@keyframes opacityAnimation {
+    from {opacity:0;}
+    to {opacity:1;}
 }
- */
 
 
 
-
-
-
-
+/* 
+.firstAnimation {
+    -webkit-animation: animation 10000ms linear both;
+    animation: animation 10000ms linear both;
+  }
+  
+  @-webkit-keyframes animation { 
+    0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    4.3% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 51.427, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 51.427, 0, 0, 1); }
+    8.61% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 87.859, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 87.859, 0, 0, 1); }
+    12.91% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 105.228, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 105.228, 0, 0, 1); }
+    17.22% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 109.333, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 109.333, 0, 0, 1); }
+    28.33% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 102.063, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 102.063, 0, 0, 1); }
+    39.44% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.377, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.377, 0, 0, 1); }
+    61.66% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100.042, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100.042, 0, 0, 1); }
+    83.98% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.997, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.997, 0, 0, 1); }
+    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1); } 
+  }
+  
+  @keyframes animation { 
+    0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    4.3% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 51.427, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 51.427, 0, 0, 1); }
+    8.61% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 87.859, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 87.859, 0, 0, 1); }
+    12.91% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 105.228, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 105.228, 0, 0, 1); }
+    17.22% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 109.333, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 109.333, 0, 0, 1); }
+    28.33% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 102.063, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 102.063, 0, 0, 1); }
+    39.44% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.377, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.377, 0, 0, 1); }
+    61.66% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100.042, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100.042, 0, 0, 1); }
+    83.98% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.997, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 99.997, 0, 0, 1); }
+    100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1); } 
+  }
+  
+   */
 
 /* ==========================================================================
    Helper classes
